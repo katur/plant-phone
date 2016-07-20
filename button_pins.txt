@@ -1,8 +1,0 @@
-gray,	pi7,m1,col4
-purple,	pi11,m2,col3 
-blue,	pi13,m3,col2
-green,	pi15,m4,col1
-yellow,	pi29,m5,row1
-orange,	pi31,m6,row2
-red,	pi33,m7,row3
-brown,	pi37,m8,row4
