@@ -62,4 +62,4 @@ if __name__ == '__main__':
         coordinate = get_key()
         if coordinate:
             print coordinate
-            coordinate = None
+            break
