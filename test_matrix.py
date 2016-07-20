@@ -58,6 +58,8 @@ def get_key():
 if __name__ == '__main__':
     # Loop while waiting for a keypress
     coordinate = None
-    while coordinate is None:
+    while True:
         coordinate = get_key()
-    print coordinate
+        if coordinate:
+            print coordinate
+            coordinate = None
