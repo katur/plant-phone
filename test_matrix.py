@@ -63,3 +63,5 @@ if __name__ == '__main__':
         if coordinate:
             print coordinate
             break
+
+    GPIO.cleanup()
