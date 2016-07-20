@@ -1,4 +1,4 @@
-MATRIX_COLUMNS = {
+COLUMNS = {
     1: {
         'pi_pin': 15,
         'matrix_pin': 4,
@@ -21,7 +21,7 @@ MATRIX_COLUMNS = {
     }
 }
 
-MATRIX_ROWS = {
+ROWS = {
     1: {
         'pi_pin': 29,
         'matrix_pin': 5,
