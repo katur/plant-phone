@@ -2,6 +2,8 @@ import RPi.GPIO as GPIO
 
 from config import COLUMNS, ROWS
 
+from time import sleep
+
 COL_1_PIN = COLUMNS[1]['pi_pin']
 ROW_1_PIN = ROWS[1]['pi_pin']
 
@@ -62,6 +64,6 @@ if __name__ == '__main__':
         coordinate = get_key()
         if coordinate:
             print coordinate
-            break
+            sleep(.1)
 
     GPIO.cleanup()
