@@ -6,11 +6,31 @@ by Katherine Erickson and Marielle Foster
 - Raspberry Pi 2
 
 
-# Pi Setup
+# Setup
 
-### Sound.
+### Pi OS
 
-See [http://elinux.org/RPi_Text_to_Speech_(Speech_Synthesis)#Install_supporting_packages].
+Add various aliases to ~/.bashrc.
+
+
+Set up wireless:
+https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+
+
+Switch keyboard language:
+https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=80127
+
+
+Install Vim:
+
+```
+sudo apt-get install vim
+```
+
+
+### Sound
+
+See http://elinux.org/RPi_Text_to_Speech_(Speech_Synthesis)#Install_supporting_packages
 
 ```
 sudo apt-get update
