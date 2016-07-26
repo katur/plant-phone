@@ -39,4 +39,5 @@ sudo apt-get upgrade
 sudo apt-get install alsa-utils  # Already installed. Suggested doing the below step.
 sudo apt-get -f install
 sudo apt-get install festival
+sudo apt-get install espeak
 ```
