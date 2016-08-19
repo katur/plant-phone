@@ -1,6 +1,8 @@
 import RPi.GPIO as GPIO
 
-from config import COLUMNS, ROWS
+from config import COLUMNS, ROWS, COORDINATES
+
+from time import sleep
 
 COL_1_PIN = COLUMNS[1]['pi_pin']
 ROW_1_PIN = ROWS[1]['pi_pin']
@@ -61,7 +63,7 @@ if __name__ == '__main__':
     while True:
         coordinate = get_key()
         if coordinate:
-            print coordinate
-            break
+            print COORDINATES[coordinate]['button_name']
+            sleep(.2)
 
     GPIO.cleanup()
