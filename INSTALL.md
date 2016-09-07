@@ -40,6 +40,8 @@ sudo apt-get install vim
 
 ## Python
 
+http://raspberrypi-aa.github.io/session4/venv.html
+
 Attempt to use virtualenv:
 
 ```
