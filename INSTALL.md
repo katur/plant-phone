@@ -1,4 +1,25 @@
-# Notes from last time:
+# New notes!
+
+## Wiping SD card to start over
+
+Downloaded NOOBS with Rasbian from here, and then followed the instructions
+files (txt file in the download directory) to reformat the SD card with an
+SDReader software:
+https://www.raspberrypi.org/downloads/noobs/
+
+Then followed the instructions in the NOOBS setup video to copy the files onto
+the SD card, using a miniSD-to-SD converter we found at RC:
+https://www.raspberrypi.org/help/videos/
+
+Then put the card in the Raspberry Pi and successfully entered NOOBS!
+
+
+## NOOBS
+
+Selected Raspbian as the operating system to install
+
+
+# Notes from last time
 
 ## Pi OS setup
 
