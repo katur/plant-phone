@@ -1,25 +1,25 @@
 #!/usr/bin/env python
 
-
 # Borrowed from http://www.ugw.name/?page_id=157
-
 
 import pyaudio
 import socket
 
+
 # Pyaudio Initialization
-chunk = 1024
+CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 10240
 
 p = pyaudio.PyAudio()
 
-stream = p.open(format=FORMAT,
-                channels=CHANNELS,
-                rate=RATE,
-                input=True,
-                frames_per_buffer=chunk)
+stream = p.open(
+    format=FORMAT,
+    channels=CHANNELS,
+    rate=RATE,
+    input=True,
+    frames_per_buffer=CHUNK)
 
 # Socket Initialization
 host = 'localhost'  # Change this to client's host
@@ -29,8 +29,8 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((host, port))
 
 # Main Functionality
-while 1:
-    data = stream.read(chunk)
+while True:
+    data = stream.read(CHUNK)
     s.send(data)
     s.recv(size)
 

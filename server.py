@@ -1,20 +1,19 @@
 #!/usr/bin/env python
 
-
 # Borrowed from http://www.ugw.name/?page_id=157
-
 
 import pyaudio
 import socket
 
+
 # Pyaudio Initialization
-chunk = 1024
 p = pyaudio.PyAudio()
 
-stream = p.open(format=pyaudio.paInt16,
-                channels=1,
-                rate=10240,
-                output=True)
+stream = p.open(
+    format=pyaudio.paInt16,
+    channels=1,
+    rate=10240,
+    output=True)
 
 # Socket Initialization
 host = ''
@@ -28,7 +27,7 @@ s.listen(backlog)
 client, address = s.accept()
 
 # Main Functionality
-while 1:
+while True:
     data = client.recv(size)
     if data:
         # Write data to pyaudio stream
